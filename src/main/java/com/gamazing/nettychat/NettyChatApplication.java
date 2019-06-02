@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.gamazing"})
-@MapperScan("")
+@MapperScan("com.gamazing.nettychat.mapper")
 public class NettyChatApplication {
 
 	public static void main(String[] args) {
