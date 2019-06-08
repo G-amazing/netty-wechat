@@ -26,4 +26,14 @@
     LIMIT 1
   </select>
 
+  <insert id="create" parameterType="java.util.Map" useGeneratedKeys="true" keyProperty="id">
+    INSERT INTO
+    <include refid="table" />
+    SET
+    <if test="id !=null">
+      `id`=#{id},
+    </if>
+    `username`=#{username},`password`=#{password},`face_image`=#{faceImage},`face_image_big`=#{faceImageBig},`nickname`=#{nickname},`qrcode`=#{qrcode},`cid`=#{cid}
+  </insert>
+
 </mapper>

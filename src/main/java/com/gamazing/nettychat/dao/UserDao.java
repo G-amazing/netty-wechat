@@ -4,4 +4,6 @@ import com.gamazing.nettychat.entity.User;
 
 public interface UserDao {
     User findOneByUserName(String username);
+
+    void create(User user);
 }

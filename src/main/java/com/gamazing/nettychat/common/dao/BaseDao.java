@@ -1,4 +1,4 @@
-package com.gamazing.nettychat.common;
+package com.gamazing.nettychat.common.dao;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
