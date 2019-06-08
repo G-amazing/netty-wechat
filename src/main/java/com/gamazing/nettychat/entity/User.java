@@ -3,7 +3,7 @@ package com.gamazing.nettychat.entity;
 import lombok.Data;
 
 @Data
-public class Users {
+public class User {
     private String id;
     private String username;
     private String password;
