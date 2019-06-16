@@ -9,6 +9,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Arrays;
+import java.util.List;
+
 import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Base64Utils;
@@ -16,6 +19,9 @@ import org.springframework.web.multipart.MultipartFile;
 
 @Service
 public class FileUtils {
+
+	public static final List<String> IMAGE_EXTENSIONS = Arrays.asList("jpg", "jpeg", "png");
+
 	/**
 	 * 根据url拿取file
 	 * @param suffix  文件后缀名

@@ -8,6 +8,8 @@ public enum ResultCode {
     USERNAME_TYPE_EMPTY(1000, "username is empty"),
     PWD_TYPE_EMPTY(1001, "password is empty"),
     USERNAME_OR_PASSWORD_ERROR(1002, "username or password error"),
+    USER_IMAGE_EMPTY(1003, "Please choose photo"),
+    IMAGE_FORMAT_ERROR(1004, "Photo format error"),
     ;
 
     private int status;
