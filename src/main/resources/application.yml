@@ -7,3 +7,11 @@ spring:
     url: jdbc:mysql://localhost:3306/wechat?useUnicode=true&serverTimezone=PRC&characterEncoding=utf8&useSSL=false
     username: root
     password: 123456
+fdfs:
+  so-timeout: 1501 # 超时时间
+  connect-timeout: 601 # 连接超时时间
+  thumb-image: # 缩略图
+    width: 60
+    height: 60
+  tracker-list: # tracker地址：你的虚拟机服务器地址+端口（默认是22122）
+    - 192.168.146.128:22122
